@@ -19,6 +19,7 @@ def process_frame(frame):
     global last_emotion, last_confidence, frame_count, emotion_history
 
     frame_count += 1
+    print("Processing new frame...")
 
     frame_small = cv2.resize(frame, (320, 240))
     gray = cv2.cvtColor(frame_small, cv2.COLOR_BGR2GRAY)
